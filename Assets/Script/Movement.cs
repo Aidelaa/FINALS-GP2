@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+//using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -79,11 +79,11 @@ public class PlayerMovement : MonoBehaviour
         rigidBody.velocity = movementInput * moveSpeed;
     }
 
-    private void OnMove(InputValue inputValue)
-    {
+    //private void OnMove(InputValue inputValue)
+    //{
         //if press WASD = to Vector 2 values
-        movementInput = inputValue.Get<Vector2>();
-    }
+        //movementInput = inputValue.Get<Vector2>();
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
