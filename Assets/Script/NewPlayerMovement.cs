@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewPlayerMovement : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class NewPlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator anim;
     Vector2 movement;
+    public string GameCompleteScene;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,15 @@ public class NewPlayerMovement : MonoBehaviour
         {
             KalatCount++;
             Destroy(collision.gameObject);
+        }
+
+        GameOver();
+    }
+    void GameOver()
+    {
+        if (KalatCount == 22)
+        {
+            SceneManager.LoadScene(GameCompleteScene);
         }
     }
 }

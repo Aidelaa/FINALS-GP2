@@ -4936,10 +4936,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d9cfa02f6b4c942b96a3b56e2c2825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 3
+  MoveSpeed: 2
   KalatCount: 0
   rb: {fileID: 932452938}
   anim: {fileID: 932452941}
+  GameCompleteScene: GameComplete
 --- !u!50 &932452938
 Rigidbody2D:
   serializedVersion: 4
